@@ -24,30 +24,20 @@
       - git
       - neovim
       - xclip
-      - ncdu
       - tmux
       - openssh-server
       - ubuntu-restricted-extras
       - debconf-utils
-      - lftp
       - htop
-      - deluge-gtk
       - budgie-*-applet
       - gnome-mpv
-      - calibre
       - whois
       - apt-transport-https
       - ca-certificates
       - curl
       - software-properties-common
       - docker-ce
-      - cowsay
       - python-pip
-      - meld
-      - figlet
-      - typora
-      - nomacs
-      - uncrustify
       - snapd-xdg-open
       - rtv
       - breeze-icon-theme
@@ -55,6 +45,16 @@
       - breeze-cursor-theme
       - grub-theme-breeze
       - asciinema
+      - unzip
+      - tar
+      - htop
+      - tilix
+      - python3-pip
+      - build-essential
+      - python-dev
+      - cmake
+      - software-properties-common
+      - ack
 
 - name: Autoremove and Purge APT Packages
   apt:

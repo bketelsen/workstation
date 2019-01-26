@@ -1,4 +1,4 @@
 - name: Create Ansible Machine state directory
   file:
-    path: "/home/{{ myusername }}/.config/bashfulrobot-ansible"
+    path: "/home/{{ myusername }}/.config/workstation"
     state: directory

@@ -5,10 +5,6 @@
     state: present
   register: add_repository_key
   ignore_errors: true
-- name: Add Typora GPG Key
-  apt_key:
-    url: https://typora.io/linux/public-key.asc
-    state: present
 - name: Add Launchpad PPAs
   apt_repository:
     repo: "{{ item }}"
@@ -17,16 +13,9 @@
   with_items:
     - ppa:ansible/ansible
     - ppa:ubuntubudgie/backports
-    - ppa:seafile/seafile-client
 - name: Add Docker PPA
   apt_repository:
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable
     filename: docker
-    update_cache: yes
-    state: present
-- name: Add Typora PPA
-  apt_repository:
-    repo: deb https://typora.io/linux ./
-    filename: typora
     update_cache: yes
     state: present

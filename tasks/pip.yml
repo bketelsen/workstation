@@ -2,4 +2,3 @@
   pip:
     name:
       - ansible-lint
-      - awscli

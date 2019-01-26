@@ -1,24 +1,15 @@
 - name: Install Snap Packages
   command: 'snap install "{{ item }}"'
   with_items:
-    - yakyak
     - firefox
-    - irccloud-desktop
     - hugo
     - libreoffice
     - remmina
     - spotify
     - lxd
-    - telegram-desktop
     - simplescreenrecorder
-    - bitwarden
-    - bw
-    - discord
     - mailspring
     #- gravit-designer
-    - serve
-    - icdiff
-    - pocket-casts
     - gnome-twitch
     - gotop
     #- youtube-dl # Needs edge channel
@@ -31,7 +22,6 @@
     - snapcraft
     - slack
     - snapdiff
-    - aws-cli
 - name: Install Node Snap Package
   command: 'snap install node --channel=11/stable --classic'
 - name: Remmina Snap CFG

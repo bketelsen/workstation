@@ -1,7 +1,7 @@
 - name: Adding System Users
   user:
-    name: dustin
-    comment: Dustin Krysak
+    name: bketelsen
+    comment: Brian Ketelsen
     shell: /bin/bash
     groups: sudo, adm, cdrom, dip, plugdev, lpadmin, sambashare, docker, lxd
     append: yes
@@ -11,7 +11,7 @@
     state: present
     key: https://github.com/{{item}}.keys
   with_items:
-      - bashfulrobot
+      - bketelsen
 - name: Fixing SSH Key Permissions
   become: yes
   file:

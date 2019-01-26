@@ -2,8 +2,8 @@
 
 ANSIBLE=$(which ansible-playbook)
 MYLOCBASE="$HOME/tmp"
-MYREPO="$MYLOCBASE/bashfulrobot-ansible"
-MYREPORMT="https://github.com/bashfulrobot/bashfulrobot-ansible.git"
+MYREPO="$MYLOCBASE/workstation"
+MYREPORMT="https://github.com/bketelsen/workstation.git"
 MYPPA="ansible"
 
 # Bootstrap Ansible

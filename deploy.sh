@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APULL=$(which ansible-pull)
-MYREPO="https://github.com/bashfulrobot/bashfulrobot-ansible.git"
+MYREPO="https://github.com/bketelsen/workstation.git"
 MYPPA="ansible"
 
 # Bootstrap Ansible
