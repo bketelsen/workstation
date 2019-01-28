@@ -17,7 +17,6 @@
   command: 'snap install "{{ item }}" --classic'
   with_items:
     - vscode
-    - go
     - restic
     - snapcraft
     - slack

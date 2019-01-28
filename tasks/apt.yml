@@ -55,6 +55,7 @@
       - cmake
       - software-properties-common
       - ack
+      - rofi
 
 - name: Autoremove and Purge APT Packages
   apt:
