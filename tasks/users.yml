@@ -3,7 +3,7 @@
     name: bjk
     comment: Brian Ketelsen
     shell: /bin/bash
-    groups: sudo, adm, cdrom, dip, plugdev, lpadmin, sambashare, docker, lxd
+    groups: sudo, adm, cdrom, dip, plugdev, lpadmin, docker, lxd
     append: yes
 - name: Install GH SSH Pub keys
   authorized_key:
