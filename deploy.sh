@@ -19,4 +19,4 @@ if [ ! -f $HOME/.ansible.cfg ]; then
 	echo 'remote_tmp     = /tmp/$USER/ansible' >>$HOME/.ansible.cfg
 fi
 
-sudo $APULL -U $MYREPO
+sudo "$APULL -U $MYREPO"

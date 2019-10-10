@@ -1,8 +1,8 @@
 - hosts: localhost
   become: true
   vars:
-    myusername: bketelsen
-    myhome: /home/bketelsen
+    myusername: bjk
+    myhome: /home/bjk
   pre_tasks:
     - name: Update Repositories
       apt: update_cache=yes
@@ -18,10 +18,9 @@
     - include: tasks/users.yml
     - include: tasks/sudoers.yml
     - include: tasks/cron.yml
-    - include: tasks/dconf.yml
     # - include: tasks/vscode.yml
     - include: tasks/services.yml
-    - include: tasks/ufw.yml
+    #- include: tasks/ufw.yml
     - include: tasks/timezone.yml
-    - include: tasks/nsswitch.yml
+    #- include: tasks/nsswitch.yml
     #- include: tasks/dotfiles.yml

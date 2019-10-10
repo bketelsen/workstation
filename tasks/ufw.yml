@@ -1,6 +1,6 @@
 - name: Enable UFW
   ufw:
-    state: enabled
+    state: disabled
 - name: Enable SSH Ports
   ufw:
     rule: allow

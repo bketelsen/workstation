@@ -3,14 +3,8 @@
   with_items:
     - firefox
     - hugo
-    - libreoffice
-    - remmina
-    - spotify
     - lxd
     - simplescreenrecorder
-    - mailspring
-    #- gravit-designer
-    - gnome-twitch
     - gotop
     #- youtube-dl # Needs edge channel
 - name: Install Classic Snap Packages
@@ -18,15 +12,3 @@
   with_items:
     - vscode
     - restic
-    - snapcraft
-    - slack
-    - snapdiff
-- name: Install Node Snap Package
-  command: 'snap install node --channel=11/stable --classic'
-- name: Remmina Snap CFG
-  command: 'snap connect remmina:"{{ item }}" :"{{ item }}"'
-  with_items:
-    - avahi-observe
-    - cups-control
-    - mount-observe
-    - password-manager-service
